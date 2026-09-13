@@ -1,6 +1,6 @@
 {
   "name": "@qb1tycinema/common",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Core shared components for Qb1tyCinema microservice ecosystem",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -12,16 +12,26 @@
   },
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
-    "format": "prettier --write \"src/**/*.ts\""
+    "format": "prettier --write \"lib/**/*.ts\""
   },
   "author": {
     "name": "Arsen",
     "email": "arman205082@gmail.com"
   },
   "devDependencies": {
+    "@nestjs/common": "^11.0.1",
+    "@nestjs/config": "^4.0.4",
+    "@nestjs/microservices": "^11.1.29",
+    "@qb1tycinema/contracts": "^1.2.7",
     "@qb1tycinema/core": "^1.0.3",
     "@types/node": "^26.2.0",
     "prettier": "^3.9.6",
     "typescript": "^7.0.2"
+  },
+  "peerDependencies": {
+    "@nestjs/common": "^11.0.1",
+    "@nestjs/config": "^4.0.4",
+    "@nestjs/microservices": "^11.1.29",
+    "@qb1tycinema/contracts": "^1.2.7"
   }
 }
