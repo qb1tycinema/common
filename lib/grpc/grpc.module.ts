@@ -23,11 +23,11 @@ export class GrpcModule {
 							factory: GrpcClientFactory,
 							config: ConfigService
 						) => {
-							const env = config.getOrThrow<string>(cfg.env)
+							const url = config.getOrThrow<string>(cfg.url)
 							const client = factory.createClient({
 								package: cfg.package,
 								protoPath: cfg.protoPath,
-								env
+								url
 							})
 
 							factory.register(token, client)

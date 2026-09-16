@@ -6,16 +6,16 @@ export const GRPC_CLIENTS: Record<string, GrpcRegistryOptions> = {
 	AUTH_PACKAGE: {
 		package: "auth.v1",
 		protoPath: PROTO_PATHS.AUTH,
-		env: "AUTH_GRPC_URL"
+		url: "AUTH_GRPC_URL"
 	},
 	ACCOUNT_PACKAGE: {
 		package: "account.v1",
 		protoPath: PROTO_PATHS.ACCOUNT,
-		env: "ACCOUNT_GRPC_URL"
+		url: "ACCOUNT_GRPC_URL"
 	},
 	USERS_PACKAGE: {
 		package: "users.v1",
 		protoPath: PROTO_PATHS.USERS,
-		env: "USERS_GRPC_URL"
+		url: "USERS_GRPC_URL"
 	}
 } as const
