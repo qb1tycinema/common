@@ -17,5 +17,10 @@ export const GRPC_CLIENTS: Record<string, GrpcRegistryOptions> = {
 		package: "users.v1",
 		protoPath: PROTO_PATHS.USERS,
 		url: "USERS_GRPC_URL"
+	},
+	MEDIA_PACKAGE: {
+		package: "media.v1",
+		protoPath: PROTO_PATHS.MEDIA,
+		url: "MEDIA_GRPC_URL"
 	}
 } as const
