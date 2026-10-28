@@ -22,5 +22,15 @@ export const GRPC_CLIENTS: Record<string, GrpcRegistryOptions> = {
 		package: "media.v1",
 		protoPath: PROTO_PATHS.MEDIA,
 		url: "MEDIA_GRPC_URL"
+	},
+	MOVIE_PACKAGE: {
+		package: "movie.v1",
+		protoPath: PROTO_PATHS.MOVIE,
+		url: "MOVIE_GRPC_URL"
+	},
+	CATEGORY_PACKAGE: {
+		package: "category.v1",
+		protoPath: PROTO_PATHS.CATEGORY,
+		url: "CATEGORY_GRPC_URL"
 	}
 } as const
