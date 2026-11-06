@@ -32,5 +32,10 @@ export const GRPC_CLIENTS: Record<string, GrpcRegistryOptions> = {
 		package: "category.v1",
 		protoPath: PROTO_PATHS.CATEGORY,
 		url: "CATEGORY_GRPC_URL"
+	},
+	THEATER_PACKAGE: {
+		package: "theater.v1",
+		protoPath: PROTO_PATHS.THEATER,
+		url: "THEATER_GRPC_URL"
 	}
 } as const
